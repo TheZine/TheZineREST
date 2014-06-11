@@ -1,4 +1,3 @@
 requests
-bs4
-psy
+BeautifulSoup4
 psycopg2

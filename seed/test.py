@@ -2,10 +2,16 @@
 
 from tz import TZ , Article
 #import MySQLdb
+import urlparse
 import psycopg2
 
 #Con = MySQLdb.Connect(host="localhost", port=3306, user="root", passwd="", db="tz")
-Con = psycopg2.connect(host="ec2-54-243-49-82.compute-1.amazonaws.com" , port=5432 ,database='d1nrqcben47t9e', user='nhhixxyvtfnfhz',passwd="ZFVEs0WFj_ezDqWqtMI5OZsDV8")
+Con = result = urlparse.urlparse("postgresql://postgres:postgres@localhost/postgres")
+username = result.username
+password = result.password
+database = result.path[1:]
+hostname = result.hostname
+Con = psycopg2.connect(database = database,user = username,password = password,host = hostname)
 Cursor = Con.cursor()
 
 def store_contact(author_id ,contact):
