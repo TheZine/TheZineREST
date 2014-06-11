@@ -7,7 +7,7 @@ import psycopg2
 import os
 
 #Con = MySQLdb.Connect(host="localhost", port=3306, user="root", passwd="", db="tz")
-Con = result = urlparse.urlparse(os.environ['DATABASE_URL'])
+Con = result = urlparse.urlparse('postgres://rrsnphbopdtmzj:yoBn6Rl8SdFa-wClHoX9eVGWiK@ec2-54-197-237-231.compute-1.amazonaws.com:5432/dfbfoeecfmjt6i')
 username = result.username
 password = result.password
 database = result.path[1:]
@@ -41,7 +41,7 @@ def store_author(author):
 def store_article(article):
 	sql = "INSERT INTO Article(id,title,tagline,body,issue,link,author_id) VALUES('{0}','{1}','{2}','{3}',{4},'{5}','{6}')"
 	#escape_body = MySQLdb.escape_string(str(article.body))
-	escape_body = article.body
+	escape_body = "%s"%article.body
 	try:
 		Cursor.execute(sql.format(article.id,article.title,article.tagline,escape_body,article.issue,article.link,article.author.id))
 	except Exception as e:
