@@ -38,7 +38,7 @@ def store_author(author):
 def store_article(article):
 	escape_body = '%s'%article.body
 	try:
-		article_row = Article(article.id,article.title,article.tagline,escape_body,article.issue,article.link,article.author.id)
+		article_row = Article(article.id,article.title,article.tagline,escape_body.strip(),article.issue,article.link,article.author.id)
 		session.add(article_row)
 		session.commit()
 	except Exception as e:
