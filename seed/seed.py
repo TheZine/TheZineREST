@@ -7,8 +7,8 @@ session = db.session()
 
 def store_contact(author_id ,contact):
 	try:
-		contact = Contact(author_id,contact.email,contact.facebook,contact.twitter,contact.link)
-		session.add(contact)
+		contact_row = Contact(author_id,contact.email,contact.facebook,contact.twitter,contact.link)
+		session.add(contact_row)
 	except Exception as e:
 		print e
 		pass
@@ -18,8 +18,8 @@ def store_contact(author_id ,contact):
 
 def store_author(author):
 	try:
-		author = Author(author.id,author.name,author.image)
-		session.add(author)
+		author_row = Author(author.id,author.name,author.image)
+		session.add(author_row)
 	except Exception as e:
 		print e
 		pass
@@ -31,8 +31,8 @@ def store_author(author):
 def store_article(article):
 	escape_body = 'dummy body'
 	try:
-		article = Article(article.id,article.title,article.tagline,escape_body,article.issue,article.link,article.author.id)
-		session.add(article)
+		article_row = Article(article.id,article.title,article.tagline,escape_body,article.issue,article.link,article.author.id)
+		session.add(article_row)
 	except Exception as e:
 		print e
 		pass
