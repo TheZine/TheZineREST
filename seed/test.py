@@ -7,7 +7,7 @@ import psycopg2
 import os
 
 #Con = MySQLdb.Connect(host="localhost", port=3306, user="root", passwd="", db="tz")
-Con = result = urlparse.urlparse('postgres://rrsnphbopdtmzj:yoBn6Rl8SdFa-wClHoX9eVGWiK@ec2-54-197-237-231.compute-1.amazonaws.com:5432/dfbfoeecfmjt6i')
+Con = result = urlparse.urlparse(os.environ['DATABASE_URL'])
 username = result.username
 password = result.password
 database = result.path[1:]
@@ -45,11 +45,11 @@ def store_article(article):
 	try:
 		Cursor.execute(sql.format(article.id,article.title,article.tagline,escape_body,article.issue,article.link,article.author.id))
 	except Exception as e:
+		print e
 		pass
 	finally:
-		print e
 		print '{0} article added '.format(article.id)
-		store_author(article.author)
+		#store_author(article.author)
 
 for i in range(1,5):		
 	articles  = TZ().get_articles(i)
