@@ -1,7 +1,7 @@
 
 
 from tz import TZ , Article
-import MySQLdb
+#import MySQLdb
 import psycopg2
 
 #Con = MySQLdb.Connect(host="localhost", port=3306, user="root", passwd="", db="tz")
