@@ -1,10 +1,12 @@
+import os
+
 from flask import Flask
 from flask.ext.restful import Resource,Api,abort
 from flask.ext.sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 api = Api(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root_abhijeet:abhijeet@ec2-50-19-213-178.compute-1.amazonaws.com:3306/python_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app)
 
 # Defining SQLAlchemy Models
