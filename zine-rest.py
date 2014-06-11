@@ -4,7 +4,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 api = Api(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost:3306/tz'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root_abhijeet:abhijeet@ec2-50-19-213-178.compute-1.amazonaws.com:3306/python_db'
 db = SQLAlchemy(app)
 
 # Defining SQLAlchemy Models
