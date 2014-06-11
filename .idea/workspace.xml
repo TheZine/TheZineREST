@@ -29,7 +29,7 @@
       <file leaf-file-name="zine.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="24" selection-start="435" selection-end="435" vertical-scroll-proportion="0.34517765" vertical-offset="51" max-vertical-offset="3162">
+            <state line="16" column="36" selection-start="583" selection-end="583" vertical-scroll-proportion="-1.5101523" vertical-offset="867" max-vertical-offset="3162">
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -320,7 +320,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="780" extended-state="1" />
+    <frame x="-8" y="-8" width="1320" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -386,7 +386,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="435" selection-end="435" vertical-scroll-proportion="0.34517765" vertical-offset="51" max-vertical-offset="3162">
+        <state line="16" column="36" selection-start="583" selection-end="583" vertical-scroll-proportion="-1.5101523" vertical-offset="867" max-vertical-offset="3162">
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
