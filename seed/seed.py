@@ -38,7 +38,7 @@ def store_article(article):
 		pass
 	finally:
 		print '{0} article added '.format(article.id)
-		# store_author(article.author)
+		store_author(article.author)
 
 for i in range(1,5):		
 	articles  = TZ().get_articles(i)
@@ -46,7 +46,5 @@ for i in range(1,5):
 		print 'fetching link %s'%article['link']
 		article  = ArticleClass.fromLink(article['link'])
 		store_article(article)
-# sql = "SELECT * FROM Article"
-# print Cursor.execute(sql)
 
 session.commit()
