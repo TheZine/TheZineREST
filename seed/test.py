@@ -41,7 +41,7 @@ def store_author(author):
 def store_article(article):
 	sql = "INSERT INTO Article(id,title,tagline,body,issue,link,author_id) VALUES('{0}','{1}','{2}','{3}',{4},'{5}','{6}')"
 	#escape_body = MySQLdb.escape_string(str(article.body))
-	escape_body = "%s"%article.body
+	escape_body = "dummy body"
 	try:
 		Cursor.execute(sql.format(article.id,article.title,article.tagline,escape_body,article.issue,article.link,article.author.id))
 	except Exception as e:
