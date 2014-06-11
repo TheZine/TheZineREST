@@ -3,12 +3,16 @@
 from tz import TZ , Article as ArticleClass
 from zine import db,Author,Article,Contact
 
+# re-entering whole db
+db.drop_all()
+db.create_all()
 session = db.session()
 
 def store_contact(author_id ,contact):
 	try:
-		contact_row = Contact(author_id,contact.email,contact.facebook,contact.twitter,contact.link)
-		session.add(contact_row)
+		if Contact.query.filter_by(author_id=author.id).first() is None:
+			contact_row = Contact(author_id,contact.email,contact.facebook,contact.twitter,contact.link)
+			session.add(contact_row)
 	except Exception as e:
 		print e
 		pass
@@ -18,8 +22,9 @@ def store_contact(author_id ,contact):
 
 def store_author(author):
 	try:
-		author_row = Author(author.id,author.name,author.image)
-		session.add(author_row)
+		if Author.query.filter_by(id=author.id).first() is None:
+			author_row = Author(author.id,author.name,author.image)
+			session.add(author_row)
 	except Exception as e:
 		print e
 		pass
