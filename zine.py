@@ -12,6 +12,7 @@ db = SQLAlchemy(app)
 # Defining SQLAlchemy Models
 
 class Author(db.Model):
+    __tablename__ = 'Author'
     id = db.Column(db.String(255), primary_key=True)
     name = db.Column(db.String(255))
     image_url = db.Column(db.String(255))
@@ -55,6 +56,7 @@ class Author(db.Model):
         return '<Author %r>' % self.id
 
 class Article(db.Model):
+    __tablename__ = 'Article'
     id = db.Column(db.String(255), primary_key=True)
     title = db.Column(db.String(255))
     tagline = db.Column(db.String(255))
@@ -91,6 +93,7 @@ class Article(db.Model):
         return '<Article %r>' % self.title
 
 class Contact(db.Model):
+    __tablename__ = 'Contact'
     author_id = db.Column(db.String(255),primary_key=True)
     email = db.Column(db.String(255))
     facebook = db.Column(db.String(255))

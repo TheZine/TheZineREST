@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="zine.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="zine.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3111">
+            <state line="180" column="0" selection-start="5594" selection-end="5594" vertical-scroll-proportion="0.9137056" vertical-offset="2700" max-vertical-offset="3162">
               <folding>
                 <element signature="e#1#24#0" expanded="true" />
               </folding>
@@ -37,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zine-rest.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="zine-rest.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zine-rest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="35" selection-start="1536" selection-end="1536" vertical-scroll-proportion="1.7690356" vertical-offset="0" max-vertical-offset="3111">
+            <state line="95" column="28" selection-start="0" selection-end="5594" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3162">
               <folding>
                 <element signature="e#1#24#0" expanded="true" />
               </folding>
@@ -61,8 +61,8 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/zine.py" />
         <option value="$PROJECT_DIR$/zine-rest.py" />
+        <option value="$PROJECT_DIR$/zine.py" />
       </list>
     </option>
   </component>
@@ -375,18 +375,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zine.py">
+    <entry file="file://$PROJECT_DIR$/zine-rest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3111">
+        <state line="95" column="28" selection-start="0" selection-end="5594" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3162">
           <folding>
             <element signature="e#1#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zine-rest.py">
+    <entry file="file://$PROJECT_DIR$/zine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="35" selection-start="1536" selection-end="1536" vertical-scroll-proportion="1.7690356" vertical-offset="0" max-vertical-offset="3111">
+        <state line="180" column="0" selection-start="5594" selection-end="5594" vertical-scroll-proportion="0.9137056" vertical-offset="2700" max-vertical-offset="3162">
           <folding>
             <element signature="e#1#24#0" expanded="true" />
           </folding>
