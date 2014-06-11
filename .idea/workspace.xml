@@ -29,9 +29,9 @@
       <file leaf-file-name="zine.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="0" selection-start="5594" selection-end="5594" vertical-scroll-proportion="0.9137056" vertical-offset="2700" max-vertical-offset="3162">
+            <state line="7" column="66" selection-start="231" selection-end="231" vertical-scroll-proportion="0.30203044" vertical-offset="0" max-vertical-offset="3162">
               <folding>
-                <element signature="e#1#24#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -363,7 +363,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="3111">
           <folding>
-            <element signature="e#1#24#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -386,9 +386,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="0" selection-start="5594" selection-end="5594" vertical-scroll-proportion="0.9137056" vertical-offset="2700" max-vertical-offset="3162">
+        <state line="7" column="66" selection-start="231" selection-end="231" vertical-scroll-proportion="0.30203044" vertical-offset="0" max-vertical-offset="3162">
           <folding>
-            <element signature="e#1#24#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
