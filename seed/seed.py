@@ -10,7 +10,7 @@ session = db.session()
 
 def store_contact(author_id ,contact):
 	try:
-		if Contact.query.filter_by(author_id=author.id).first() is None:
+		if Contact.query.filter_by(author_id=author_id).first() is None:
 			contact_row = Contact(author_id,contact.email,contact.facebook,contact.twitter,contact.link)
 			session.add(contact_row)
 	except Exception as e:
