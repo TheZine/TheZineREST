@@ -20,6 +20,7 @@ def store_contact(author_id ,contact):
 		sql = "INSERT INTO Contact(author_id,email,facebook,twitter,link) VALUES('%s','%s','%s','%s','%s')"%(author_id,contact.email,contact.facebook,contact.twitter,contact.link)
 		Cursor.execute(sql)
 	except Exception as e:
+		print e
 		pass
 	finally:
 		print '{0} contact added '.format(author_id)
@@ -29,7 +30,8 @@ def store_author(author):
 	try:
 		sql = "INSERT INTO Author(id,name,image_url) VALUES('%s','%s','%s')"%(author.id,author.name,author.image)
 		Cursor.execute(sql)
-	except:
+	except Exception as e:
+		print e
 		pass
 	finally:
 		print '{0} author added '.format(author.name)
@@ -45,6 +47,7 @@ def store_article(article):
 	except Exception as e:
 		pass
 	finally:
+		print e
 		print '{0} article added '.format(article.id)
 		store_author(article.author)
 
