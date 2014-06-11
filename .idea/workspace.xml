@@ -40,7 +40,7 @@
       <file leaf-file-name="zine-rest.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zine-rest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="20" selection-start="552" selection-end="552" vertical-scroll-proportion="0.3883249" vertical-offset="0" max-vertical-offset="3111">
+            <state line="41" column="35" selection-start="1536" selection-end="1536" vertical-scroll-proportion="1.7690356" vertical-offset="0" max-vertical-offset="3111">
               <folding>
                 <element signature="e#1#24#0" expanded="true" />
               </folding>
@@ -320,7 +320,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="780" extended-state="1" />
+    <frame x="-8" y="-8" width="1320" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -370,7 +370,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="36" selection-end="36" vertical-scroll-proportion="0.083538085" vertical-offset="0" max-vertical-offset="407" />
+        <state line="2" column="16" selection-start="36" selection-end="36" vertical-scroll-proportion="0.083538085" vertical-offset="0" max-vertical-offset="407">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zine.py">
@@ -384,7 +386,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zine-rest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="552" selection-end="552" vertical-scroll-proportion="0.3883249" vertical-offset="0" max-vertical-offset="3111">
+        <state line="41" column="35" selection-start="1536" selection-end="1536" vertical-scroll-proportion="1.7690356" vertical-offset="0" max-vertical-offset="3111">
           <folding>
             <element signature="e#1#24#0" expanded="true" />
           </folding>

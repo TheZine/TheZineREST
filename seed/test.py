@@ -4,9 +4,10 @@ from tz import TZ , Article
 #import MySQLdb
 import urlparse
 import psycopg2
+import os
 
 #Con = MySQLdb.Connect(host="localhost", port=3306, user="root", passwd="", db="tz")
-Con = result = urlparse.urlparse("postgres://nhhixxyvtfnfhz:ZFVEs0WFj_ezDqWqtMI5OZsDV8@ec2-54-243-49-82.compute-1.amazonaws.com:5432/d1nrqcben47t9e")
+Con = result = urlparse.urlparse(os.environ['DATABASE_URL'])
 username = result.username
 password = result.password
 database = result.path[1:]
