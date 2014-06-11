@@ -6,7 +6,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 api = Api(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL'] if os.environ['DATABASE_URL'] else ''
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL'] if os.environ['DATABASE_URL'] else 'postgres://nhhixxyvtfnfhz:ZFVEs0WFj_ezDqWqtMI5OZsDV8@ec2-54-243-49-82.compute-1.amazonaws.com:5432/d1nrqcben47t9e'
 db = SQLAlchemy(app)
 
 # Defining SQLAlchemy Models
@@ -158,6 +158,7 @@ class ArticleResource(Resource):
             },
             "data":Article.query.filter_by(id=article_id).first().serialize()
         }
+
 
 class Index(Resource):
     def get(self):
