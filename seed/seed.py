@@ -1,6 +1,6 @@
 
 
-from tz import TZ , Article
+from tz import TZ , Article as ArticleClass
 from zine import db,Author,Article,Contact
 
 session = db.session()
@@ -44,7 +44,7 @@ for i in range(1,5):
 	articles  = TZ().get_articles(i)
 	for article in articles:
 		print 'fetching link %s'%article['link']
-		article  = Article.fromLink(article['link'])
+		article  = ArticleClass.fromLink(article['link'])
 		store_article(article)
 # sql = "SELECT * FROM Article"
 # print Cursor.execute(sql)
