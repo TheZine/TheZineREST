@@ -6,7 +6,6 @@ from flask.ext.sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 api = Api(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://nhhixxyvtfnfhz:ZFVEs0WFj_ezDqWqtMI5OZsDV8@ec2-54-243-49-82.compute-1.amazonaws.com:5432/d1nrqcben47t9e'
 db = SQLAlchemy(app)
 
 # Defining SQLAlchemy Models
@@ -177,4 +176,4 @@ api.add_resource(ArticleResource,'/v1/article/<string:article_id>')
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
