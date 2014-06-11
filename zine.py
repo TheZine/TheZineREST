@@ -6,7 +6,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 api = Api(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL'] if os.environ['DATABASE_URL'] else ''
 db = SQLAlchemy(app)
 
 # Defining SQLAlchemy Models

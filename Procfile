@@ -1,1 +1,1 @@
-web: gunicorn zine-rest:app
+web: gunicorn zine:app
