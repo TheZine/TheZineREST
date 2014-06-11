@@ -157,11 +157,17 @@ class ArticleResource(Resource):
             "data":Article.query.filter_by(id=article_id).first().serialize()
         }
 
+class Index(Resource):
+    def get(self):
+        return {'message': 'unofficial api of the blog http://thezine.biz'}
+
 
 # Defining routes
 
+api.add_resource(Index,'/')
 api.add_resource(AuthorResource,'/v1/author/<string:author_id>')
 api.add_resource(ArticleResource,'/v1/article/<string:article_id>')
+
 
 
 if __name__ == '__main__':
