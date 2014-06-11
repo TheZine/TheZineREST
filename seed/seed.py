@@ -13,6 +13,7 @@ def store_contact(author_id ,contact):
 		if Contact.query.filter_by(author_id=author_id).first() is None:
 			contact_row = Contact(author_id,contact.email,contact.facebook,contact.twitter,contact.link)
 			session.add(contact_row)
+			session.commit()
 	except Exception as e:
 		print e
 		pass
@@ -25,6 +26,7 @@ def store_author(author):
 		if Author.query.filter_by(id=author.id).first() is None:
 			author_row = Author(author.id,author.name,author.image)
 			session.add(author_row)
+			session.commit()
 	except Exception as e:
 		print e
 		pass
@@ -38,6 +40,7 @@ def store_article(article):
 	try:
 		article_row = Article(article.id,article.title,article.tagline,escape_body,article.issue,article.link,article.author.id)
 		session.add(article_row)
+		session.commit()
 	except Exception as e:
 		print e
 		pass
@@ -51,5 +54,3 @@ for i in range(1,5):
 		print 'fetching link %s'%article['link']
 		article  = ArticleClass.fromLink(article['link'])
 		store_article(article)
-
-session.commit()
