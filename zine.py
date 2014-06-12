@@ -37,19 +37,36 @@ class Author(db.Model):
             contact_list.append(contact_dict)
         return contact_list
 
-    def serialize(self):
+    def serialize_profile(self):
         """
             Converts object to dict
         """
-        author_dict = {
+        author_profile_dict = {
             'id' : self.id,
             'name' :self.name,
-            'image_url' : self.image_url,
+            'image_url' : self.image_url
+        }
+        return author_profile_dict
+		
+    def serialize_articles(self):
+        """
+            Converts object to dict
+        """
+        author_articles_dict = {
             'no_of_articles':len(self.get_articles()),
-            'articles':self.get_articles(),
+            'articles':self.get_articles()
+        }
+        return author_articles_dict
+		
+
+    def serialize_contacts(self):
+        """
+            Converts object to dict
+        """
+        author_contacts_dict = {
             'contacts':self.get_contacts()
         }
-        return author_dict
+        return author_contacts_dict		
 
     def __repr__(self):
         return '<Author %r>' % self.id
@@ -146,7 +163,7 @@ class AuthorResource(Resource):
                 'is_successful':True,
                 'code':200
             },
-           "data": Author.query.filter_by(id=author_id).first().serialize()
+           "data": Author.query.filter_by(id=author_id).first().serialize_profile()
         }
 
 class AuthorArticleResource(Resource):
@@ -158,10 +175,7 @@ class AuthorArticleResource(Resource):
                 'is_successful':True,
                 'code':200
             },
-           "data": {
-				'no_of_articles' : len(Author.query.filter_by(id=author_id).first().get_articles()),
-				'articles': Author.query.filter_by(id=author_id).first().get_articles()
-			}
+           "data": Author.query.filter_by(id=author_id).first().serialize_articles()
         }			
 
 class ArticleResource(Resource):
