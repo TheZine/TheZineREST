@@ -135,7 +135,7 @@ def abort_if_author_doesnt_exist(author_id):
         author_list.append(author_dict['id'])
 
     if author_id not in author_list:
-        abort(404,meta={'code':404,'is_successful':False},message="Author with id {} doesn't exist".format(author_id))
+        abort(404,meta={'code':404,'is_successful':False},message="Author with id {} doesn't exist".format(author_id))	
 
 class AuthorResource(Resource):
     def get(self,author_id):
@@ -149,6 +149,21 @@ class AuthorResource(Resource):
            "data": Author.query.filter_by(id=author_id).first().serialize()
         }
 
+class AuthorArticleResource(Resource):
+    def get(self,author_id):
+        abort_if_author_doesnt_exist(author_id)
+        return {
+            "message":"Author with this id exist",
+            "meta":{
+                'is_successful':True,
+                'code':200
+            },
+           "data": {
+				'no_of_articles' : len(Author.query.filter_by(id=author_id).first().get_articles()),
+				'articles': Author.query.filter_by(id=author_id).first().get_articles()
+			}
+        }			
+
 class ArticleResource(Resource):
     def get(self,article_id):
         abort_if_article_doesnt_exist(article_id)
@@ -161,7 +176,6 @@ class ArticleResource(Resource):
             "data":Article.query.filter_by(id=article_id).first().serialize()
         }
 
-
 class Index(Resource):
     def get(self):
         return {'message': 'unofficial api of the blog http://thezine.biz'}
@@ -171,6 +185,10 @@ class Index(Resource):
 
 api.add_resource(Index,'/')
 api.add_resource(AuthorResource,'/v1/author/<string:author_id>')
+# api.add_resource(AuthorListResource,'/v1/author/<string:author_id>/contact')
+api.add_resource(AuthorArticleResource,'/v1/author/<string:author_id>/articles')
+#api.add_resource(AuthorContactResource,'/v1/author/<string:author_id>/contact')
+
 api.add_resource(ArticleResource,'/v1/article/<string:article_id>')
 
 
