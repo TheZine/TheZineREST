@@ -1,4 +1,4 @@
 Flask==0.9
 Flask-restful
 Flask-sqlalchemy
-TheZine==0.0.1
+TheZine==0.1
