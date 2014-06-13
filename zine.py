@@ -10,8 +10,10 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app)
 
 from resources.author import get_author_resource
+from resources.article import get_article_resource
 
 AuthorResource = get_author_resource(db)
+ArticleResource = get_article_resource(db)
 
 class HelloResource(Resource):
     def get(self):
@@ -20,6 +22,7 @@ class HelloResource(Resource):
         }
 
 api.add_resource(AuthorResource,'/v1/author/<string:author_id>')
+api.add_resource(ArticleResource,'/v1/article/<string:article_id>')
 api.add_resource(HelloResource,'/')
 
 
