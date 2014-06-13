@@ -4,7 +4,7 @@ def get_article_model(db):
 
     class Article(db.Model):
         __tablename__ = 'Article'
-        __table_args__ = {"useexisting": True}
+        __table_args__ = {"extend_existing": True}
         id = db.Column(db.String(255), primary_key=True)
         title = db.Column(db.String(255))
         tagline = db.Column(db.String(255))

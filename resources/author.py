@@ -3,6 +3,7 @@ __author__ = 'ABHIJEET'
 from flask_restful import Resource,abort
 from models.author import get_author_model
 from models.article import get_article_model
+from models.contact import get_contact_model
 
 
 def get_author_resource(db):
@@ -55,3 +56,22 @@ def get_author_article_resource(db):
             }
 
     return AuthorArticleResource
+
+def get_author_contact_resource(db):
+
+    Contact = get_contact_model(db)
+
+    class AuthorContactResource(Resource):
+        def get(self,author_id):
+            return {
+                "message":"Author with this id exist",
+                "meta":{
+                    'is_successful':True,
+                    'code':200
+                },
+               "data":{
+                   "contacts":Contact.query.filter_by(author_id=author_id).first().serialize()
+               }
+            }
+
+    return AuthorContactResource

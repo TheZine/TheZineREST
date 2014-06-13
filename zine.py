@@ -10,22 +10,34 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app)
 
 from resources.author import get_author_resource
-from resources.article import get_article_resource
 from resources.author import get_author_article_resource
+from resources.author import get_author_contact_resource
+
+from resources.article import get_article_resource
+from resources.article import get_article_list_resource
+from resources.article import get_article_list_issue_resource
 
 AuthorResource = get_author_resource(db)
-ArticleResource = get_article_resource(db)
 AuthorArticleResource = get_author_article_resource(db)
+AuthorContactResource = get_author_contact_resource(db)
+
+ArticleResource = get_article_resource(db)
+ArticleListResource = get_article_list_resource(db)
+ArticleListIssueResource = get_article_list_issue_resource(db)
 
 class HelloResource(Resource):
     def get(self):
         return {
-            "message":'hey'
+            "message":'Unofficial api for the blog http://thezine.biz'
         }
 
 api.add_resource(AuthorResource,'/v1/author/<string:author_id>')
 api.add_resource(AuthorArticleResource,'/v1/author/<string:author_id>/articles')
+api.add_resource(AuthorContactResource,'/v1/author/<string:author_id>/contacts')
+
 api.add_resource(ArticleResource,'/v1/article/<string:article_id>')
+api.add_resource(ArticleListResource,'/v1/articles')
+api.add_resource(ArticleListIssueResource,'/v1/articles/<string:issue_id>')
 api.add_resource(HelloResource,'/')
 
 

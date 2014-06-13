@@ -4,7 +4,7 @@ def get_author_model(db):
 
     class Author(db.Model):
         __tablename__ = 'Author'
-        __table_args__ = {"useexisting": True}
+        __table_args__ = {"extend_existing": True}
         id = db.Column(db.String(255), primary_key=True)
         name = db.Column(db.String(255))
         image_url = db.Column(db.String(255))
