@@ -1,6 +1,10 @@
 __author__ = 'ABHIJEET'
 
+from models.contact import get_contact_model
+
 def get_author_model(db):
+
+    Contact = get_contact_model(db)
 
     class Author(db.Model):
         __tablename__ = 'Author'
@@ -21,7 +25,8 @@ def get_author_model(db):
             author_profile_dict = {
                 'id' : self.id,
                 'name' :self.name,
-                'image_url' : self.image_url
+                'image_url' : self.image_url,
+                'contacts' : Contact.query.filter_by(author_id=self.id).first().serialize()
             }
             return author_profile_dict
 

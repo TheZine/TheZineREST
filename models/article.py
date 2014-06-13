@@ -1,6 +1,10 @@
 __author__ = 'ABHIJEET'
 
+from models.author import get_author_model
+
 def get_article_model(db):
+
+    Author = get_author_model(db)
 
     class Article(db.Model):
         __tablename__ = 'Article'
@@ -33,7 +37,7 @@ def get_article_model(db):
                 'body':self.body,
                 'issue':self.issue,
                 'link':self.link,
-                'author_id':self.author_id
+                'author':Author.query.filter_by(id=self.author_id).first().serialize_profile()
             }
             return article_dict
 

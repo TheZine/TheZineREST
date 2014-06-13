@@ -40,7 +40,6 @@ def get_article_list_resource(db):
             for article in Article.query.all():
                 articles.append(article.serialize())
             return {
-                "message":"Article with this id exist",
                 "meta":{
                     'is_successful':True,
                     'code':200
@@ -64,7 +63,6 @@ def get_article_list_issue_resource(db):
             for article in Article.query.filter_by(issue=issue_id):
                 articles.append(article.serialize())
             return {
-                "message":"Article with this id exist",
                 "meta":{
                     'is_successful':True,
                     'code':200

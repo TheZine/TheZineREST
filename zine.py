@@ -1,12 +1,12 @@
 from flask import Flask
-from flask_restful import Api,Resource
+from flask_restful import Api,Resource,abort
 from flask_sqlalchemy import SQLAlchemy
 import os
 
 app = Flask(__name__)
 api = Api(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root@localhost:3306/tz'
+#app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root@localhost:3306/tz'
 db = SQLAlchemy(app)
 
 from resources.author import get_author_resource
@@ -30,6 +30,7 @@ class HelloResource(Resource):
         return {
             "message":'Unofficial api for the blog http://thezine.biz'
         }
+
 
 api.add_resource(AuthorResource,'/v1/author/<string:author_id>')
 api.add_resource(AuthorArticleResource,'/v1/author/<string:author_id>/articles')
