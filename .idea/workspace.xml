@@ -40,7 +40,7 @@
       <file leaf-file-name="author.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/author.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="139" selection-end="139" vertical-scroll-proportion="0.25061426" vertical-offset="0" max-vertical-offset="646">
+            <state line="5" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.20884521" vertical-offset="0" max-vertical-offset="646">
               <folding>
                 <element signature="e#25#65#0" expanded="true" />
               </folding>
@@ -388,6 +388,7 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -460,7 +461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/author.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="139" selection-end="139" vertical-scroll-proportion="0.25061426" vertical-offset="0" max-vertical-offset="646">
+        <state line="5" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.20884521" vertical-offset="0" max-vertical-offset="646">
           <folding>
             <element signature="e#25#65#0" expanded="true" />
           </folding>

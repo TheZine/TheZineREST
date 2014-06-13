@@ -1,4 +1,7 @@
 Flask==0.9
 Flask-restful
 Flask-sqlalchemy
-TheZine==0.1
+gunicorn==0.17.2
+psycopg2
+requests
+BeautifulSoup4
