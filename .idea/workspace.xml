@@ -12,7 +12,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/zine$zine.coverage" NAME="zine Coverage Results" MODIFIED="1402701312429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/zine$zine.coverage" NAME="zine Coverage Results" MODIFIED="1402776846510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -40,10 +40,17 @@
       <file leaf-file-name="article.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/article.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="38" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
-              <folding>
-                <element signature="e#25#65#0" expanded="true" />
-              </folding>
+            <state line="64" column="13" selection-start="1969" selection-end="1969" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="author.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/author.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="24" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,10 +58,8 @@
       <file leaf-file-name="author.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/author.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="683" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="1411">
-              <folding>
-                <element signature="e#25#65#0" expanded="true" />
-              </folding>
+            <state line="24" column="0" selection-start="683" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="188" max-vertical-offset="1360">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,7 +67,7 @@
       <file leaf-file-name="article.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/article.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+            <state line="12" column="41" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="901">
               <folding />
             </state>
           </provider>
@@ -88,9 +93,9 @@
         <option value="$PROJECT_DIR$/resources/author.py" />
         <option value="$PROJECT_DIR$/models/contact.py" />
         <option value="$PROJECT_DIR$/resources/issue.py" />
-        <option value="$PROJECT_DIR$/resources/article.py" />
         <option value="$PROJECT_DIR$/models/article.py" />
         <option value="$PROJECT_DIR$/models/author.py" />
+        <option value="$PROJECT_DIR$/resources/article.py" />
         <option value="$PROJECT_DIR$/zine.py" />
       </list>
     </option>
@@ -274,9 +279,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -298,6 +300,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -411,12 +416,24 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/author.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="683" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/article.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="41" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/article.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="20" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1445">
-          <folding>
-            <element signature="e#25#65#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -432,9 +449,7 @@
     <entry file="file://$PROJECT_DIR$/resources/author.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="66" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="527">
-          <folding>
-            <element signature="e#25#65#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -469,14 +484,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/contact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="21" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="307" max-vertical-offset="714">
+        <state line="20" column="21" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="307" max-vertical-offset="714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/author.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="683" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="1411">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/author.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="937" selection-end="937" vertical-scroll-proportion="1.2948403" vertical-offset="0" max-vertical-offset="714">
+        <state line="17" column="24" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
@@ -490,19 +510,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/article.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="38" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0" vertical-offset="1038" max-vertical-offset="1445">
-          <folding>
-            <element signature="e#25#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/author.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="683" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="1411">
-          <folding>
-            <element signature="e#25#65#0" expanded="true" />
-          </folding>
+        <state line="64" column="13" selection-start="1969" selection-end="1969" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+          <folding />
         </state>
       </provider>
     </entry>

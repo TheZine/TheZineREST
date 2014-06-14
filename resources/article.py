@@ -37,8 +37,10 @@ def get_article_list_resource(db):
     class ArticleListResource(Resource):
         def get(self):
             articles = []
+            keys = ['id','title','author','tagline']
             for article in Article.query.all():
-                articles.append(article.serialize())
+                article_dict = article.serialize()
+                articles.append({key:article_dict[key] for key in keys})
             return {
                 "meta":{
                     'is_successful':True,
@@ -60,8 +62,10 @@ def get_article_list_issue_resource(db):
         def get(self,issue_id):
             abort_if_issue_doesnt_exist(issue_id)
             articles = []
-            for article in Article.query.filter_by(issue=issue_id):
-                articles.append(article.serialize())
+            keys = ['id','title','author','tagline']
+            for article in Article.query.all():
+                article_dict = article.serialize()
+                articles.append({key:article_dict[key] for key in keys})
             return {
                 "meta":{
                     'is_successful':True,
