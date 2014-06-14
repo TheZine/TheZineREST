@@ -63,7 +63,7 @@ def get_article_list_issue_resource(db):
             abort_if_issue_doesnt_exist(issue_id)
             articles = []
             keys = ['id','title','author','tagline']
-            for article in Article.query.all():
+            for article in Article.query.filter_by(issue=issue_id):
                 article_dict = article.serialize()
                 articles.append({key:article_dict[key] for key in keys})
             return {
