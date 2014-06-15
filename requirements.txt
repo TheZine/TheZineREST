@@ -2,6 +2,7 @@ Flask==0.9
 Flask-restful
 Flask-sqlalchemy
 gunicorn==0.17.2
+TheZine
 psycopg2
 requests
 BeautifulSoup4
