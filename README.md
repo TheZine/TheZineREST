@@ -8,7 +8,7 @@ Unofficial REST API for [The Zine](http://thezine.biz/)
 Start
 =====
 
-    $ python app.py                     # start the api
+    $ python zine.py                     # start the api
 
 License
 ==========================
