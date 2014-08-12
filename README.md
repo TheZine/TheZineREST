@@ -5,6 +5,11 @@ TheZineREST
 
 Unofficial REST API for [The Zine](http://thezine.biz/)
 
+Start
+=====
+
+    $ python app.py                     # start the api
+
 License
 ==========================
 
