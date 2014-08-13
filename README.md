@@ -9,6 +9,11 @@ Start
 =====
 
     $ python zine.py                     # start the api
+    
+Usage
+=====    
+```
+```
 
 License
 ==========================
