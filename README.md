@@ -15,6 +15,11 @@ Usage
 ```
 ```
 
+Contribute
+========
+
+Feel free to send a pull request.
+
 License
 ==========================
 
