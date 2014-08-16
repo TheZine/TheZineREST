@@ -11,7 +11,10 @@ Start
     $ python zine.py                     # start the api
     
 Usage
-=====    
+===== 
+
+**Base URL:** [http://thezine.herokuapp.com/](http://thezine.herokuapp.com/)
+
 ```
 ```
 
