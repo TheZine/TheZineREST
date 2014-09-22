@@ -18,6 +18,7 @@ Usage
 **Output:** JSON
 
 ```
+    /deals/
 ```
 
 Contribute
