@@ -18,7 +18,7 @@ Usage
 **Output:** JSON
 
 ```
-  #  /deals/
+    /deals/                         # endpoint for fetching deals
 ```
 
 Contribute
