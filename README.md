@@ -17,7 +17,7 @@ Usage
 
 **Output:** JSON
 
-`GET /deals`
+`GET /articles`
 
 ```
 ```
