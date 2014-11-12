@@ -17,7 +17,7 @@ Usage
 
 **Output:** JSON
 
-`GET /articles`
+`GET /v1/articles`
 
 ```
 ```
