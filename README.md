@@ -17,7 +17,7 @@ Usage
 
 **Output:** JSON
 
-`GET /v1/articles`
+`GET /v1/articles/<count>`
 
 ```
 ```
