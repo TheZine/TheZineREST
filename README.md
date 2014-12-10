@@ -30,6 +30,9 @@ Contribute
 
 Feel free to send a pull request.
 
+Developed By
+============
+
 License
 ==========================
 
