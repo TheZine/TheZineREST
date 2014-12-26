@@ -28,6 +28,10 @@ Usage
 
 `GET /v1/author/<author_id>`
 
+```
+    http://thezine.herokuapp.com/v1/author/meghna-gulati
+```
+
 Contribute
 ========
 
