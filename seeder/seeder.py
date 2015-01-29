@@ -1,4 +1,4 @@
-
+# script for seeding data into the database
 
 from tz import TZ , Article as ArticleClass
 from zine import db
