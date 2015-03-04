@@ -34,7 +34,7 @@ Usage
 Contribute
 ========
 
-Feel free to send a pull request.
+Feel free to send a pull request!
 
 Developed By
 ============
