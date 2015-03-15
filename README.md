@@ -8,7 +8,7 @@ Unofficial REST API for blog [The 'Zine](http://thezine.biz/)
 Start
 =====
 
-    $ python zine.py                     # start the api script at server
+    $ python zine.py                     # start the script at server
     
 Usage
 ===== 
