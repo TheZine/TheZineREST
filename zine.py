@@ -6,6 +6,7 @@ import os
 app = Flask(__name__)
 api = Api(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+# localhost database configuration
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root@localhost:3306/tz'
 db = SQLAlchemy(app)
 
