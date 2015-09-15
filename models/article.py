@@ -2,6 +2,7 @@ __author__ = 'ABHIJEET'
 
 from models.author import get_author_model
 
+# callback returning Article class
 def get_article_model(db):
 
     Author = get_author_model(db)
